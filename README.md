@@ -2,18 +2,18 @@
 Opens relative and absolute files and URLs in Sublime Text 2
 
 
-Given the following folder/file structure:
----------
-C:/Users/user/Desktop/TestFolder
-...../subFolder
-..........file.txt
-..........2nd file.txt
-...../2nd subFolder
-..........myJam.mp3
-.....siblingFile.txt
-.....photo.jpg
-.....youAreHere.txt
-
+|Given the following folder/file structure:|
+|---------|
+|C:/Users/user/Desktop/TestFolder|
+|...../subFolder|
+|..........file.txt|
+|..........2nd file.txt|
+|...../2nd subFolder|
+|..........myJam.mp3|
+|.....siblingFile.txt|
+|.....photo.jpg|
+|.....youAreHere.txt|
+|
 Where you have youAreHere.txt open,..
 
 Click in this:...			|  and [ctrl + u] will:...			| 	Because it is.. 
