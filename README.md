@@ -3,6 +3,7 @@ Opens relative and absolute files and URLs in Sublime Text 2
 
 
 Given the following folder/file structure:
+---------
 C:/Users/user/Desktop/TestFolder
 ...../subFolder
 ..........file.txt
@@ -15,7 +16,7 @@ C:/Users/user/Desktop/TestFolder
 
 Where you have youAreHere.txt open,..
 
-: Click in this:...	:		| : and [ctrl + u] will:...	:		| :	Because it is.. :
+Click in this:...			|  and [ctrl + u] will:...			| 	Because it is.. 
 -------- | ------- | -----
 C:/Users/User/Desktop		| Open folder in Explorer			| 	Absolute path to directory
 siblingFile.jpg 			| Open file in notepad/Sublime		| Relative path to Within containing folder of current file
