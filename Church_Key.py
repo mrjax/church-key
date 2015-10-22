@@ -30,6 +30,10 @@ class ChurchKeyCommand(sublime_plugin.TextCommand):
 		if escape == False:
 			webbrowser.open_new_tab("http://google.com/#q=" + urllib.quote(input))
 
+	# Pick up selection based on cursor
+	# This scans left and right until it reaches an escape character, or either end of the file
+	# TODO: Add more sophistication for messier input.
+	# TODO: /\ poss. layered selection.  If first layer does not work, run selection() with parameter to try next layer of complexity
 	def selection(self, limit):
 		s = self.view.sel()[0]
 
@@ -52,6 +56,10 @@ class ChurchKeyCommand(sublime_plugin.TextCommand):
 
 		return self.view.substr(sublime.Region(start, end)).strip()
 
+	# Attempts to open file
+	# This runs a series of checks in a well thought out if-elif structure to cover the file possibilities
+	# TODO: Add complexity so home directory can be an array of common home directories of files
+	# TODO: 
 	def openFile(self, input):
 		dir = self.config.get("homeDirectory")
 		escape = False

@@ -1,6 +1,7 @@
 # church-key
 Opens relative and absolute files and URLs in Sublime Text 2
 
+The purpose of this plugin is to have a shortcut to open local files.  Images, sound files, movies, anything else can be highlighted or selected with the cursor and opened from the sublime window.  Furthermore, you can configure which directories will be searched to find the file you have selected to open.  If file opening fails, the plugin will resolve your selection in the browser (either opening the URL or googling the word/term).
 
 |Given the following folder/file structure:|
 |---------|
@@ -25,11 +26,8 @@ siblingFile.jpg 			| Open file in notepad/Sublime		| Relative path to Within con
 /subFolder					| Open folder in Explorer			| 	Relative path to directory within containing folder of current file
 /subFolder/file.txt 		| Open file in notepad/Sublime 		| Relative path works
 /subFolder/2nd file.txt 	| Open file in notepad/Sublime		| Folder name will accept 2 following spaces, see Config Section
-"querulously" 				| Google this word 					|
+"querulously" 				| Google this word 					| ..none of the above
 
-
-
-explain spaces work after cursor
 
 
 Config Settings:
@@ -97,4 +95,5 @@ Some of my code is similar, because I looked at his code as reference when I got
 
 Todo:
 Test "http" presence vs "https" presence
+explain spaces work after cursor
 
