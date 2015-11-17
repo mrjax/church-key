@@ -5,7 +5,7 @@ import os, sys, webbrowser, urllib
 class ChurchKeyCommand(sublime_plugin.TextCommand):
 	config = sublime.load_settings("Church_Key.sublime-settings")
 	
-	def run(self, edit):
+	def run(self, edit): 
 		dir = self.config.get("homeDirectory")
 		spaces = self.config.get("spaceLimit")
 
