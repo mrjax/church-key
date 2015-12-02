@@ -37,8 +37,8 @@ class ChurchKeyCommand(sublime_plugin.TextCommand):
 	def selection(self, limit):
 		s = self.view.sel()[0]
 
-		start = s.a
-		end = s.b
+		start = s.begin()
+		end = s.end()
 		size = self.view.size()
 		count = 0
 
